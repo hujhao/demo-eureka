@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>demo-eureka</artifactId>
+        <version>1.0.0-demo</version>
+    </parent>
+
+    <artifactId>eureka-server</artifactId>
+    <name>eureka-server</name>
+    <description>Demo project for Spring Boot</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+<!--    <profiles>-->
+<!--        <profile>-->
+<!--            <activation>-->
+<!--                <activeByDefault>true</activeByDefault>-->
+<!--            </activation>-->
+<!--            <id>peer1</id>-->
+<!--            <properties>-->
+<!--                <profileActive>peer1</profileActive>-->
+<!--            </properties>-->
+<!--            <build>-->
+<!--                <resources>-->
+<!--                    <resource>-->
+<!--                        <directory>src/main/profiles/peer1</directory>-->
+<!--                    </resource>-->
+<!--                    <resource>-->
+<!--                        <directory>src/main/resources</directory>-->
+<!--                    </resource>-->
+<!--                </resources>-->
+<!--            </build>-->
+<!--        </profile>-->
+
+<!--        <profile>-->
+<!--            <id>peer2</id>-->
+<!--            <properties>-->
+<!--                <profileActive>peer2</profileActive>-->
+<!--            </properties>-->
+<!--            <build>-->
+<!--                <resources>-->
+<!--                    <resource>-->
+<!--                        <directory>src/main/profiles/peer2</directory>-->
+<!--                    </resource>-->
+<!--                    <resource>-->
+<!--                        <directory>src/main/resources</directory>-->
+<!--                    </resource>-->
+<!--                </resources>-->
+<!--            </build>-->
+<!--        </profile>-->
+
+<!--        <profile>-->
+<!--            <id>peer3</id>-->
+<!--            <properties>-->
+<!--                <profileActive>peer3</profileActive>-->
+<!--            </properties>-->
+<!--            <build>-->
+<!--                <resources>-->
+<!--                    <resource>-->
+<!--                        <directory>src/main/profiles/peer3</directory>-->
+<!--                    </resource>-->
+<!--                    <resource>-->
+<!--                        <directory>src/main/resources</directory>-->
+<!--                    </resource>-->
+<!--                </resources>-->
+<!--            </build>-->
+<!--        </profile>-->
+
+<!--    </profiles>-->
+
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

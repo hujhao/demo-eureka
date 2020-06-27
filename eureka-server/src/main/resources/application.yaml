@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eureka-server-demo
+eureka:
+  client:
+    service-url:
+#      defaultUrl: http://localhost:8761/eureka,http://localhost:8762/eureka,http://localhost:8763/eureka
+      defaultUrl: http://localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+server:
+  port: 8761
